@@ -10,9 +10,17 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <p className="App-intro">
-          hello react
-        </p>
+        <div className="todo-app">
+          <form>
+            <input type="text"/>
+          </form>
+          <ul className="todo-list">
+            <li><input type="checkbox"/> learn jsx</li>
+            <li><input type="checkbox"/> build</li>
+            <li><input type="checkbox"/> ship</li>
+          </ul>
+        </div>
+
       </div>
     );
   }
