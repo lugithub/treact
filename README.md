@@ -4,6 +4,9 @@ npm install create-react-app
 
 ./node_modules/.bin/create-react-app ./app
 
+install chrome extension: react developer tools
+
+
 how is 'npm start' done?
 
 how is import logo from './logo.svg' done?
