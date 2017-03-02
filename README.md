@@ -18,18 +18,26 @@ how is import './App.css' done?
   webpack
     dev: it's in file
     production: it's in a separate minified css file
-    
+
 where is http://localhost:3000/static/js/bundle.js?
+    a virtual path created. i cannot find the physical file
+      C:\lc\treact\app\node_modules\react-scripts\config\webpack.config.dev.js
 
 how is watch compile done?
 
 how is live load done?
+  C:\lc\treact\app\node_modules\react-scripts\scripts\start.js
+    hot: true, //set false but it still live load
+    https://github.com/sockjs/sockjs-node
+    not https://github.com/socketio/socket.io
 
 how is webpack source map done?
 
 how is jsx error sent to browser?
+  Probably sockjs-node
 
 what is the test framework?
+  jest
 
 how is test done?
 
