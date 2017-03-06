@@ -44,3 +44,13 @@ how is test done?
 change default port:
   in window git shell (a power shell), $env:PORT = "3001"; npm start
     http://superuser.com/questions/612409/how-do-i-run-multiple-commands-on-one-line-in-powershell
+
+to see an example of eslint error
+add
+  const f = function() {}
+    var x = new f();
+    to src/index.js
+    then watch the console output from npm start
+eslint rules: C:\lc\treact\app\node_modules\eslint-config-react-app\index.js
+
+   
