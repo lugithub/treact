@@ -4,6 +4,6 @@ import App from './App';
 import './index.css';
 
 ReactDOM.render(
-  <App />,
+  <App storyType={'v'} />,
   document.getElementById('root')
 );
