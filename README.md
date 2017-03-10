@@ -53,4 +53,5 @@ add
     then watch the console output from npm start
 eslint rules: C:\lc\treact\app\node_modules\eslint-config-react-app\index.js
 
-   
+spread properties
+  https://github.com/sebmarkbage/ecmascript-rest-spread
