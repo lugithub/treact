@@ -55,3 +55,8 @@ eslint rules: C:\lc\treact\app\node_modules\eslint-config-react-app\index.js
 
 spread properties
   https://github.com/sebmarkbage/ecmascript-rest-spread
+
+yarn(0.21.3) install vs npm(3.10.10) install
+  in app foler, yarn install took 1 minute 57 seconds
+  npm install took 2 minutes 5 seconds
+  
