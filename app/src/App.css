@@ -44,3 +44,7 @@ li {
 a {
   margin: 1em;
 }
+
+a.active {
+  color: red;
+}

@@ -2,15 +2,18 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  NavLink
  } from 'react-router-dom';
 import './App.css';
 
 const Links = () => (
   <nav>
-    <Link to="/">home</Link>
-    <Link to={{pathname: '/about'}}>about</Link>
-    <Link replace to="/contact">contact</Link>
+    <NavLink activeClassName="active" to="/">home</NavLink>
+    <NavLink activeStyle={{color: 'green'}} to={{pathname: '/about'}}>about</NavLink>
+    <NavLink activeClassName="active" isActive={(match, location) => {
+      console.log(match, location);
+      return match;
+    }} to="/contact">contact</NavLink>
   </nav>
 );
 
