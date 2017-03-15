@@ -10,7 +10,7 @@ import './App.css';
 const App = () => (
   <Router>
     <div>
-      <Route path="/:page?-:subpage?" render={({match}) =>
+      <Route path="/:page(\d{2}-\d{2}-\d{4})?-:subpage?" render={({match}) =>
         <h1>
           PAGE: {match.params.page || 'home'}<br />
           SUBPAGE: {match.params.subpage}
