@@ -1,39 +1,16 @@
-//https://facebook.github.io/react/docs/refs-and-the-dom.html#adding-a-ref-to-a-class-component
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+const Home = () => <h1>home</h1>;
 
-class ListOfWords extends React.Component {
-  render() {
-    return <div>{this.props.words.join(',')}</div>;
-  }
-}
+const App = () => (
+  <Router>
+    <div>
+      <Route exact path="/" component={Home} />
+      <Route strict path="/about/" component={Home} />
+    </div>
+  </Router>
+);
 
-class WordAdder extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      words: ['marklar']
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
 
-  handleClick() {
-    // This section is bad style and causes a bug
-    const words = this.state.words;
-    words.push('marklar');
-    this.setState({words: words});
-  }
-
-  render() {
-    return (
-      <div>
-        <button onClick={this.handleClick} />
-        <ListOfWords words={this.state.words} />
-      </div>
-    );
-  }
-}
-
-export default WordAdder;
+export default App;

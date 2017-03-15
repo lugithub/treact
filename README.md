@@ -59,4 +59,6 @@ spread properties
 yarn(0.21.3) install vs npm(3.10.10) install
   in app foler, yarn install took 1 minute 57 seconds
   npm install took 2 minutes 5 seconds
-  
+
+add routing to react apps using react router v4
+https://egghead.io/courses/add-routing-to-react-apps-using-react-router-v4?utm_source=drip&utm_medium=email&utm_content=react-router-v4  
