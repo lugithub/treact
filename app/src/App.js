@@ -1,14 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+ } from 'react-router-dom';
+import './App.css';
 
-const Home = () => <h1>home</h1>;
+const Links = () => (
+  <nav>
+    <Link to="/">home</Link>
+    <Link to={{pathname: '/about'}}>about</Link>
+    <Link replace to="/contact">contact</Link>
+  </nav>
+);
 
 const App = () => (
   <Router>
     <div>
-      <Route exact path="/" component={Home} />
-
-      <Route strict path="/about/" children={({match}) => match && <h1>about</h1>} />
+      <Links />
+      <Route exact path="/" render={() => <h1>home</h1>} />
+      <Route path="/about" render={() => <h1>about</h1>} />
+      <Route path="/contact" render={() => <h1>contact</h1>} />
     </div>
   </Router>
 );

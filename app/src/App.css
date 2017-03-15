@@ -40,3 +40,7 @@ ul {
 li {
   list-style-type: none;
 }
+
+a {
+  margin: 1em;
+}
