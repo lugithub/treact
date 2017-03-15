@@ -1,20 +1,32 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Link
  } from 'react-router-dom';
 import './App.css';
 
-
+const Links = () => (
+  <nav>
+    <Link to="/?id=123&foo=blu">inline</Link>
+    <Link to={{pathname: '/', search: 'id=456&foo=blu'}}>object</Link>
+  </nav>
+);
 
 const App = () => (
   <Router>
     <div>
-      <Route path="/:page(\d{2}-\d{2}-\d{4})?-:subpage?" render={({match}) =>
-        <h1>
-          PAGE: {match.params.page || 'home'}<br />
-          SUBPAGE: {match.params.subpage}
-        </h1>
+      <Links />
+      <Route path="/" render={
+          ({match, location}) =>
+            <div>
+              <h1>
+                {location.search}
+              </h1>
+              <h2>{new URLSearchParams(location.search).get('id')} {' '}
+                {new URLSearchParams(location.search).get('foo')}
+              </h2>
+            </div>
       }
       />
     </div>

@@ -62,3 +62,6 @@ yarn(0.21.3) install vs npm(3.10.10) install
 
 add routing to react apps using react router v4
 https://egghead.io/courses/add-routing-to-react-apps-using-react-router-v4?utm_source=drip&utm_medium=email&utm_content=react-router-v4  
+
+atom-react plugin
+https://orktes.github.io/atom-react/
