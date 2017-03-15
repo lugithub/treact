@@ -7,7 +7,8 @@ const App = () => (
   <Router>
     <div>
       <Route exact path="/" component={Home} />
-      <Route strict path="/about/" render={() => <h1>about</h1>} />
+
+      <Route strict path="/about/" children={() => <h1>about</h1>} />
     </div>
   </Router>
 );
