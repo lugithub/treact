@@ -8,7 +8,7 @@ const App = () => (
     <div>
       <Route exact path="/" component={Home} />
 
-      <Route strict path="/about/" children={() => <h1>about</h1>} />
+      <Route strict path="/about/" children={({match}) => match && <h1>about</h1>} />
     </div>
   </Router>
 );
