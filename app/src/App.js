@@ -23,8 +23,7 @@ const App = () => (
               <h1>
                 {location.search}
               </h1>
-              <h2>{new URLSearchParams(location.search).get('id')} {' '}
-                {new URLSearchParams(location.search).get('foo')}
+              <h2>
               </h2>
             </div>
       }
