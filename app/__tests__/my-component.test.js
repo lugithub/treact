@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactTestUtils from 'react-addons-test-utils';
-import MyComponent from './my-component';
+import MyComponent from '../src/my-component';
 
 const renderer = ReactTestUtils.createRenderer();
 let result;
